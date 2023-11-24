@@ -1,6 +1,6 @@
 ## RedRusDb
 
-NOTE: This was my all time dream to build something complex from scratch to understand evrything from end to end.
+NOTE: Hii am Siddharth this was my all time dream to build something complex from scratch to understand evrything from end to end.
 
 A distributed in-memory k-v storage engine in Rust! [RedRusDB Repo](https://github.com/RedRusDB/redrus)
 
