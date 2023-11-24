@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedRusDb - A Distributed In-Memory k-v Storage Engine in Rust</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>RedRusDb</h1>
+    <p>A distributed in-memory k-v storage engine in Rust!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About the Project</h2>
+      <p>An attempt to write a distributed in-memory k-v storage engine in Rust to learn about database internals.</p>
+      <ul>
+        <li>Build a database from scratch</li>
+        <li>Learn database internals, starting with Redis</li>
+        <li>Learn about advanced data structures, algorithms, and event loops</li>
+        <li>Collaborate with other engineers and contribute back to Open Source</li>
+      </ul>
+      <p>While our B+ tree now supports concurrent operations, it's still a single-threaded database system, as our
+        frontend (network/cli layer) doesn't support handling concurrent requests yet.</p>
+      <p><em>This is by no means an idiomatic Rust implementation as I'm learning Rust along the way.</em></p>
+    </section>
+
+    <section>
+      <h2>Project Status</h2>
+      <p>The project is in a slow phase because I have a job in parallel and am learning things on the way. Hence, the
+        progress will be slower. Hopefully, I can regain my momentum after a couple of weeks.</p>
+    </section>
+
+    <section>
+      <h2>End Goal</h2>
+      <p>The main focus is to write a distributed in-memory k-v storage engine from scratch. This project will include its
+        own:</p>
+      <ul>
+        <li>[ ] B+ Tree data structure</li>
+        <li>[ ] Buffer pool</li>
+        <li>[ ] LRU replacement policy</li>
+        <li>[ ] Transaction manager</li>
+        <li>[ ] Lock manager</li>
+        <li>[ ] Vector support</li>
+        <li>[ ] Persistence storage</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 RedRusDb Project</p>
+  </footer>
+</body>
+
+</html>
