@@ -9,8 +9,8 @@
     body {
       font-family: 'Arial', sans-serif;
       line-height: 1.6;
-      color: #333;
-      background-color: #f8f8f8;
+      color: #fff;
+      background-color: #2b2b2b;
       margin: 0;
       padding: 0;
     }
@@ -19,26 +19,30 @@
       background-color: #333;
       color: #fff;
       text-align: center;
-      padding: 20px 0;
+      padding: 40px 0;
     }
 
     main {
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
-      background-color: #fff;
+      background-color: #404040;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
 
     section {
       margin-top: 20px;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid #555;
       padding-top: 20px;
     }
 
-    h2 {
-      color: #333;
+    h1, h2 {
+      color: #fff;
+    }
+
+    p {
+      margin-bottom: 20px;
     }
 
     ul {
@@ -47,7 +51,7 @@
     }
 
     ul li {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
 
     footer {
@@ -68,28 +72,29 @@
   <main>
     <section>
       <h2>About the Project</h2>
-      <p>An attempt to write a distributed in-memory k-v storage engine in Rust to learn about database internals.</p>
+      <p>An ambitious journey to craft a distributed in-memory key-value storage engine in Rust, driven by the desire to
+        unravel the intricacies of database internals.</p>
       <ul>
-        <li>Build a database from scratch</li>
-        <li>Learn database internals, starting with Redis</li>
-        <li>Learn about advanced data structures, algorithms, and event loops</li>
-        <li>Collaborate with other engineers and contribute back to Open Source</li>
+        <li>Construct a database from the ground up</li>
+        <li>Explore database internals, starting with Redis</li>
+        <li>Master advanced data structures, algorithms, and event loops</li>
+        <li>Collaborate with fellow engineers and contribute to the world of Open Source</li>
       </ul>
-      <p>While our B+ tree now supports concurrent operations, it's still a single-threaded database system, as our
-        frontend (network/cli layer) doesn't support handling concurrent requests yet.</p>
-      <p><em>This is by no means an idiomatic Rust implementation as I'm learning Rust along the way.</em></p>
+      <p><em>While our B+ tree now supports concurrent operations, it's currently a single-threaded database system.
+          Concurrent request handling awaits implementation in our frontend (network/cli layer).</em></p>
+      <p><em>This implementation might not be idiomatic Rust, as I'm learning Rust along the way.</em></p>
     </section>
 
     <section>
       <h2>Project Status</h2>
-      <p>The project is in a slow phase because I have a job in parallel and am learning things on the way. Hence, the
-        progress will be slower. Hopefully, I can regain my momentum after a couple of weeks.</p>
+      <p>The project is progressing at a deliberate pace due to parallel work commitments. Learning is happening in
+        tandem with real-world application. Expect a gradual increase in momentum over the coming weeks.</p>
     </section>
 
     <section>
       <h2>End Goal</h2>
-      <p>The main focus is to write a distributed in-memory k-v storage engine from scratch. This project will include its
-        own:</p>
+      <p>The ultimate aim is to construct a distributed in-memory key-value storage engine from scratch. This project will
+        boast its own:</p>
       <ul>
         <li>[ ] B+ Tree data structure</li>
         <li>[ ] Buffer pool</li>
