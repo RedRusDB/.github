@@ -1,6 +1,6 @@
-## RedRusDb
+# RedRusDb
 
-# A distributed in-memory k-v storage engine in Rust!
+A distributed in-memory k-v storage engine in Rust!
 
 
 An attempt to write distributed in-memory k-v storage engine in Rust
